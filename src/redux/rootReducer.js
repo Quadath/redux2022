@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT } from "./types"
+import { INCREMENT, DECREMENT, ASYNC_INCREMENT } from "./types"
 export function rootReducer(state, action) {
     switch(action.type) {
         case INCREMENT: {
@@ -6,6 +6,9 @@ export function rootReducer(state, action) {
         }
         case DECREMENT: {
             return state - 1
+        }
+        case ASYNC_INCREMENT: {
+            return state + 1
         }
     }
     return state
