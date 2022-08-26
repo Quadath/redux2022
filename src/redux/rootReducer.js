@@ -1,9 +1,10 @@
+import { INCREMENT, DECREMENT } from "./types"
 export function rootReducer(state, action) {
     switch(action.type) {
-        case "INC": {
+        case INCREMENT: {
             return state + 1
         }
-        case "DEC": {
+        case DECREMENT: {
             return state - 1
         }
     }

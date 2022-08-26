@@ -1,6 +1,7 @@
 import './styles.css'
 import { createStore } from 'redux'
 import { rootReducer } from './redux/rootReducer'
+import { INCREMENT, DECREMENT } from './redux/types'
 
 const counter = document.getElementById('counter')
 const addBtn = document.getElementById('add')
